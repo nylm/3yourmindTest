@@ -22,8 +22,8 @@ git clone https://github.com/ylm3/3yourmindTest.git
 
 ## Writing test cases
 1) Create a feature file in the features directory under resources. (it should have the ".feature" extension.)
-2) Write test steps with Gherkin Language in that feature file.
-3) Locate web elements in Pages directory.
+2) Write test scenario(s)/steps with Gherkin Language in that feature file.
+3) Locate web elements in related page class in Pages directory.
 4) Create a Java class in Stepdefinitions directory and automate steps.
 
 
@@ -44,7 +44,10 @@ Second way -> Open the Project in IntelliJ and run CukesRunner class.
 ## Notes :
 
 1) Data Driven Testing (DDT) can be implemented by using Scenario Outline and Examples keywords in features.
-2) In order to run specific test case, use tags in CukesRunner.
+2) In order to run specific test case, change tags in CukesRunner or override with Maven following commands
+```
+ mvn verify -Dcucumber.options="--tags @login"
+ ```
 3) You can find test reports in Target folder (cucumber-html-reports / default-html-reports)
 
 
