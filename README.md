@@ -15,6 +15,7 @@ Prerequisites: You need to have following softwares installed on your computer
 2) Install Maven and set path
 3) IntelliJ
 4) IntelliJ Plugins: "Cucumber for Java" and "Gherkin"
+5) Clone the project to your local repo.
 
 ```
 git clone https://github.com/ylm3/3yourmindTest.git
