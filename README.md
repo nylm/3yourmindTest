@@ -44,7 +44,7 @@ Second way -> Open the Project in IntelliJ and run CukesRunner class.
 ## Notes :
 
 1) Data Driven Testing (DDT) can be implemented by using Scenario Outline and Examples keywords in features.
-2) In order to run specific test case, change tags in CukesRunner or override with Maven following commands
+2) In order to run specific test case, you can change tags in CukesRunner or you can override default tags with Maven following commands
 ```
  mvn verify -Dcucumber.options="--tags @login"
  ```
